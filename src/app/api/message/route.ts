@@ -43,7 +43,7 @@ export const POST = async (req: NextRequest) => {
 
     // Vectorize the user's message
         const embeddings = new OpenAIEmbeddings({
-            apiKey: process.env.HUGGINGFACEHUB_API_KEY,
+            apiKey: process.env.OPENAI_API_KEY,
         });
 
         // Query the Supabase vector store for relevant documents
